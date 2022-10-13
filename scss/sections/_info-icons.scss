@@ -1,0 +1,19 @@
+.info-icons{
+    .container{
+       display: grid;
+       justify-content: center;
+       grid-template-columns: repeat(4,300px);
+    //    margin-left: 14rem;
+       
+    }
+    .info-container{
+        display: flex;
+        justify-content: center;
+        width: 250px;
+        height: 50px;
+
+        i{
+            font-size: 30px;
+        }
+    }
+}

@@ -1,0 +1,162 @@
+html,body {
+    font-size:16px;
+    line-height: 1.5;
+    font-family: $font-poppins;
+    font-weight: $font-weight-regular;
+    color: $color-dark
+}
+
+body{
+margin: 0;
+}
+.container{
+    margin: 1rem;
+}
+
+.button-theme{
+    position: relative;
+    background-color: $color-theme;
+    border: none;
+    height: 60px;
+    width: 188px;
+    font-weight:bold;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    
+
+    &:hover{
+            background-color: $color-theme-dark;
+        .button-theme-border::before,.button-theme-border::after{
+            width: 91%;
+            height: 73%;
+        }
+    }
+    .button-theme-border::before,.button-theme-border::after{
+        position: absolute;
+        content: '';
+        width: 20px;
+        height: 20px;
+        transition: 0.3s linear;
+    }
+    .button-theme-border::before{
+        left:7px;
+        top:7px;
+        border-left:2px solid white;
+        border-top:2px solid white;
+    }
+    .button-theme-border::after{
+        right:7px;
+        bottom:7px;
+        border-right:2px solid white;
+        border-bottom:2px solid white;
+    }
+}
+.button-theme-dark{
+    position: relative;
+    background-color: $color-dark;
+    border: none;
+    height: 60px;
+    width: 188px;
+    font-weight:bold;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+    &:hover{
+        background-color: white;
+        color: $color-dark;
+        .button-theme-border::before,.button-theme-border::after{
+            width: 91%;
+            height: 73%;
+        }
+        .button-theme-border::before{
+            border-left:2px solid $color-dark;
+            border-top:2px solid $color-dark;
+        }
+        .button-theme-border::after{
+            border-right:2px solid $color-dark;
+            border-bottom:2px solid $color-dark;
+        }
+    }
+    
+    .button-theme-border::before,.button-theme-border::after{
+        position: absolute;
+        content: '';
+        width: 20px;
+        height: 20px;
+        transition: 0.3s linear;
+    }
+    .button-theme-border::before{
+        left:7px;
+        top:7px;
+        border-left:2px solid white;
+        border-top:2px solid white;
+    }
+    .button-theme-border::after{
+        right:7px;
+        bottom:7px;
+        border-right:2px solid white;
+        border-bottom:2px solid white;
+    }
+}
+.button-theme-white{
+    position: relative;
+    background-color: $color-white;
+    border: none;
+    height: 60px;
+    width: 188px;
+    font-weight:bold;
+    color: $color-dark;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+    &:hover{
+        background-color: $color-dark;
+        color: white;
+        .button-theme-border::before,.button-theme-border::after{
+            width: 91%;
+            height: 73%;
+        }
+        .button-theme-border::before{
+            border-left:2px solid white;
+            border-top:2px solid white;
+        }
+        .button-theme-border::after{
+            border-right:2px solid white;
+            border-bottom:2px solid white;
+        }
+    }
+    
+    .button-theme-border::before,.button-theme-border::after{
+        position: absolute;
+        content: '';
+        width: 20px;
+        height: 20px;
+        transition: 0.3s linear;
+    }
+    .button-theme-border::before{
+        left:7px;
+        top:7px;
+        border-left:2px solid $color-dark;
+        border-top:2px solid $color-dark;
+    }
+    .button-theme-border::after{
+        right:7px;
+        bottom:7px;
+        border-right:2px solid $color-dark;
+        border-bottom:2px solid $color-dark;
+    }
+}
+
+#codeCompare{
+    transform: rotateX(180deg);
+}
+
+
+@include xxl{
+    .container {
+        margin: 0rem 6.5rem;
+        max-width:1900px;
+    }
+}

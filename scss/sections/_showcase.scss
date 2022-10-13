@@ -1,0 +1,32 @@
+.showcase{
+    background-color:$color-gray-1;
+    display: flex;
+    align-items: center;
+
+    .showcase-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+
+        h1{
+            font-size: 4.5rem;
+            font-weight: $font-weight-bold;
+            line-height: 1.1;
+            text-align: center;
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+        p{
+            margin-top: 1rem;
+            font-size: 1.3rem
+        }
+    }
+
+    img{
+        width: 30%;
+    }
+
+}

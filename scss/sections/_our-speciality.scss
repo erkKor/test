@@ -1,0 +1,26 @@
+.our-speciality{
+    .container{
+        
+        background-color: $color-gray-1;
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 3rem;
+
+        .wide-card{
+            height: 200px;
+            width:400px;
+            background-color: rosybrown;
+            display: flex;
+            .card-content{
+                width: 200px;
+            }
+            .gray-square{
+                width: 200px;
+                height: 200px;
+                background-color: $color-gray-20;
+            }
+        }
+    }
+}
